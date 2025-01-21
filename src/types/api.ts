@@ -1,12 +1,13 @@
 export interface ResponseData<T = any> {
   code: number;
-  data: T;
   message: string;
+  data: T;
 }
 
 export interface PageParams {
   page: number;
   pageSize: number;
+  keyword?: string;
 }
 
 export interface PageResult<T> {
